@@ -1,0 +1,12 @@
+<manifest package="com.example.app">
+  <application>
+    <activity android:name=".Main" android:launchMode="singleTask">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <data android:scheme="myapp" android:host="home" />
+        <data android:scheme="myapp" android:host="profile" />
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>
